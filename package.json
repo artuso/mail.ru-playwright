@@ -1,0 +1,24 @@
+{
+  "name": "mail.ru-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "win:test:firefox": "set BROWSER=firefox && npx codeceptjs run",
+    "win:test:chromium": "set BROWSER=chromium && npx codeceptjs run",
+    "win:test:webkit": "set BROWSER=webkit && npx codeceptjs run",
+    "test:firefox": "export BROWSER=firefox && npx codeceptjs run",
+    "test:chromium": "export BROWSER=chromium && npx codeceptjs run",
+    "test:webkit": "export BROWSER=webkit && npx codeceptjs run",
+    "report": "allure generate ./output/allure-results --clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "allure-commandline": "2.13.8",
+    "codeceptjs": "3.0.4",
+    "dotenv": "8.2.0",
+    "playwright": "1.7.0"
+  }
+}
